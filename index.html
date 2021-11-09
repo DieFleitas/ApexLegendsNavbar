@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/img/apex-logo.png" alt="Apex Legends">
+        </div>
+        
+        <nav>
+            <a href="#" class="menu-link active"><span>PLAY</span></a>
+            <a href="#" class="menu-link"><span>LEGENDS</span></a>
+            <a href="#" class="menu-link"><span>LOADOUT</span></a>
+            <a href="#" class="menu-link"><span>BATTLE PASS</span></a>
+            <a href="#" class="menu-link"><span>STORE</span></a>
+        </nav>
+
+        <div class="side-icons">
+            <img src="img/icons.jpg" alt="">
+        </div>
+
+    </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.5/gsap.min.js" integrity="sha512-jMN542f5EnJ410tNcHNpbW8fbtE70/Elpamtqxp8Y9P7Oasy+TE0ul+6jE2xiky6GKiHhd7+DS04O1uKGHAG3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let tl = gsap.timeline();
+        tl.to('.logo', {y:0, duration: 1});
+        tl.to('nav a', {y:0, x:0, duration: 1, stagger: 0.2})
+
+        tl.to('.side-icons', {y:0, duration: 1});
+
+
+
+    </script>
+</body>
+</html>
